@@ -18,6 +18,7 @@ Plug 'honza/vim-snippets'
 Plug 'haya14busa/incsearch.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'mhinz/vim-sayonara'
 
 " editing
 Plug 'junegunn/vim-easy-align'
@@ -32,6 +33,11 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'justinmk/vim-sneak'
 Plug 'vim-scripts/camelcasemotion'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'Chiel92/vim-autoformat'
+Plug 'majutsushi/tagbar'
+Plug 'xolox/vim-easytags'
+Plug 'xolox/vim-misc'
 
 " eye candy
 Plug 'myusuf3/numbers.vim'

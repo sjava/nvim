@@ -75,3 +75,6 @@ endif
 " disable colorizer at startup
 let g:colorizer_startup = 0
 let g:colorizer_nomap = 1
+
+" autoformat
+au BufWrite *.py,*.html,*.js,*.css :Autoformat
