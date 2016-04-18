@@ -7,6 +7,8 @@ Plug 'goatslacker/mango.vim'
 Plug 'croaker/mustang-vim'
 Plug 'w0ng/vim-hybrid'
 Plug 'romainl/Apprentice'
+Plug 'mhartington/oceanic-next'
+Plug 'frankier/neovim-colors-solarized-truecolor-only'
 
 " general
 " Plug 'ervandew/supertab'

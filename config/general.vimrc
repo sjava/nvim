@@ -4,6 +4,7 @@ syntax enable
 set hlsearch
 
 set number
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
