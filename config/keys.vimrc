@@ -48,7 +48,7 @@ nnoremap <F3> :set hlsearch!<CR>
 nnoremap <F5> :source $HOME/.config/nvim/init.vim<CR>
 nnoremap <F6> :NERDTreeToggle<CR>
 nnoremap <F7> :UndotreeToggle<CR>
-nnoremap <F8> :Geeknote<CR>
+nnoremap <F8> :TagbarToggle<CR>
 " indent whole file according to syntax rules
 noremap <F9> gg=G
 
@@ -82,12 +82,7 @@ cmap w!! %!sudo tee > /dev/null %
 nmap <Leader>, <Plug>SneakPrevious
 
 " camelCase motion settings
-map <silent> w <Plug>CamelCaseMotion_w
-map <silent> b <Plug>CamelCaseMotion_b
-map <silent> e <Plug>CamelCaseMotion_e
-sunmap w
-sunmap b
-sunmap e
+call camelcasemotion#CreateMotionMappings('<leader>')
 
 " start interactive EasyAlign in visual mode (e.g. vip<Enter>)
 vmap <Enter> <Plug>(EasyAlign)

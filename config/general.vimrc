@@ -4,6 +4,7 @@ syntax enable
 set hlsearch
 
 set number
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
@@ -80,7 +81,7 @@ set ffs=unix,dos,mac
 
 " Always utf8
 set termencoding=utf-8
-" set encoding=utf-8
+set encoding=utf-8
 set fileencoding=utf-8
 
 set so=5 " scroll lines above/below cursor
