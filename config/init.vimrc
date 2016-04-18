@@ -1,14 +1,15 @@
 call plug#begin('~/.config/nvim/plugged')
 
 " colorschemes
-Plug 'junegunn/seoul256.vim'
-Plug 'nanotech/jellybeans.vim'
-Plug 'goatslacker/mango.vim'
-Plug 'croaker/mustang-vim'
-Plug 'w0ng/vim-hybrid'
+" Plug 'junegunn/seoul256.vim'
+" Plug 'nanotech/jellybeans.vim'
+" Plug 'goatslacker/mango.vim'
+" Plug 'croaker/mustang-vim'
+" Plug 'w0ng/vim-hybrid'
 Plug 'romainl/Apprentice'
 Plug 'mhartington/oceanic-next'
 Plug 'frankier/neovim-colors-solarized-truecolor-only'
+Plug 'freeo/vim-kalisi'
 
 " general
 " Plug 'ervandew/supertab'

@@ -31,6 +31,7 @@ set background=dark
 " colorscheme apprentice
 " colorscheme OceanicNext
 colorscheme solarized
+colorscheme kalisi
 
 " make background transparent
 hi Normal ctermbg=NONE
