@@ -48,7 +48,7 @@ nnoremap <F3> :set hlsearch!<CR>
 nnoremap <F5> :source $HOME/.config/nvim/init.vim<CR>
 nnoremap <F6> :NERDTreeToggle<CR>
 nnoremap <F7> :UndotreeToggle<CR>
-nnoremap <F8> :Geeknote<CR>
+nnoremap <F8> :TagbarToggle<CR>
 " indent whole file according to syntax rules
 noremap <F9> gg=G
 
