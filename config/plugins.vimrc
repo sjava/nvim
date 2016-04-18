@@ -10,6 +10,7 @@ endif
 
 " neomake config
 autocmd! BufWritePost * Neomake
+autocmd! QuitPre * let g:neomake_verbose = 0
 " autocmd BufLeave * QFix
 
 let g:neomake_warning_sign = {
