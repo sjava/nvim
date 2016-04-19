@@ -2,6 +2,7 @@ syntax on
 syntax enable
 
 set hlsearch
+set ignorecase
 
 set number
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
