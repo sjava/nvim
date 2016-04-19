@@ -29,9 +29,9 @@ let g:neomake_javascript_enabled_makers = ['eslint']
 
 set background=dark
 " colorscheme apprentice
-" colorscheme OceanicNext
-colorscheme solarized
-colorscheme kalisi
+colorscheme OceanicNext
+" colorscheme solarized
+" colorscheme kalisi
 
 " make background transparent
 hi Normal ctermbg=NONE
