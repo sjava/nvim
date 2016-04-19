@@ -15,7 +15,8 @@ let g:airline#extensions#tabline#show_tabs=0
 let g:airline#extensions#tabline#show_tab_type=1
 let g:airline#extensions#tmuxline#enabled=0
 " let g:airline_theme = 'lucius'
-let g:airline_theme = 'kalisi'
+" let g:airline_theme = 'kalisi'
+let g:airline_theme = 'oceanicnext'
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif

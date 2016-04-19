@@ -121,4 +121,4 @@ autocmd BufNewFile,BufRead,BufEnter *.md,*.markdown :syntax match markdownIgnore
 set clipboard=unnamedplus
 
 " set py3 host prog
-let g:python3_host_prog = "~/.pyenv/versions/3.5.1/bin/python"
+let g:python3_host_prog = "/home/zyb/.pyenv/versions/3.5.1/bin/python"
