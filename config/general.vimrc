@@ -119,7 +119,7 @@ set hid " buffer becomes hidden when abandoned
 autocmd BufNewFile,BufRead,BufEnter *.md,*.markdown :syntax match markdownIgnore "_"
 
 " clipboard
-set clipboard=unnamedplus
+set clipboard+=unnamed
 
 " set py3 host prog
 let g:python3_host_prog = "/home/zyb/.pyenv/versions/3.5.1/bin/python"

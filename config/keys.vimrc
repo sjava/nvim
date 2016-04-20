@@ -14,7 +14,7 @@ nnoremap <Leader>bp :bp<CR>
 nnoremap <Leader>bf :bf<CR>
 nnoremap <Leader>bl :bl<CR>
 nnoremap <Leader>bw :w<CR>:bd<CR>
-nnoremap <Leader>bd :bd!<CR>
+nnoremap <Leader>bd :Sayonara!<CR>
 " new buffer/tab
 nnoremap <Leader>e :enew<CR>
 
