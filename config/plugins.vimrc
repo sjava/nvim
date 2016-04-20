@@ -4,9 +4,13 @@ filetype plugin indent on
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#disable_auto_complete = 0
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
+set completeopt-=preview
 if !exists('g:deoplete#omni#input_patterns')
   let g:deoplete#omni#input_patterns = {}
 endif
+
+" echodoc
+let g:echodoc_enable_at_startup = 1
 
 " neomake config
 autocmd! BufWritePost * Neomake

@@ -15,6 +15,7 @@ Plug 'freeo/vim-kalisi'
 " Plug 'ervandew/supertab'
 Plug 'benekastah/neomake'
 Plug 'Shougo/deoplete.nvim'
+Plug 'Shougo/echodoc'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
