@@ -56,7 +56,8 @@ Plug 'othree/yajs.vim'
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug '1995eaton/vim-better-javascript-completion'
 Plug 'gavocanov/vim-js-indent'
-Plug 'marijnh/tern_for_vim', { 'do': 'npm install' }
+" Plug 'marijnh/tern_for_vim', { 'do': 'npm install' }
+Plug 'carlitux/deoplete-ternjs'
 Plug 'digitaltoad/vim-jade'
 Plug 'elzr/vim-json'
 Plug 'mxw/vim-jsx'
