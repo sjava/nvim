@@ -106,7 +106,7 @@ inoremap <silent><expr> <Tab> pumvisible() ? "\<C-n>" : deoplete#mappings#manual
 inoremap <Leader><Tab> <Space><Space>
 
 " tern
-autocmd FileType javascript nnoremap <silent> <buffer> gb :TernDef<CR>
+" autocmd FileType javascript nnoremap <silent> <buffer> gb :TernDef<CR>
 
 " colorizer
 nmap <Leader>tc :ColorToggle<CR>
