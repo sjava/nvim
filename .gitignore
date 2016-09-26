@@ -1,3 +1,4 @@
-backup/
-undodir/
-plugged/
+backup/*.*
+undodir/*.*
+/plugged/*.*
+/autoload/*.old

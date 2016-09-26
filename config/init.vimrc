@@ -1,11 +1,6 @@
 call plug#begin('~/.config/nvim/plugged')
 
 " colorschemes
-" Plug 'junegunn/seoul256.vim'
-" Plug 'nanotech/jellybeans.vim'
-" Plug 'goatslacker/mango.vim'
-" Plug 'croaker/mustang-vim'
-" Plug 'w0ng/vim-hybrid'
 Plug 'romainl/Apprentice'
 Plug 'mhartington/oceanic-next'
 Plug 'frankier/neovim-colors-solarized-truecolor-only'
@@ -23,7 +18,9 @@ Plug 'haya14busa/incsearch.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'mhinz/vim-sayonara'
-
+Plug 'mileszs/ack.vim'
+Plug 'lambdalisue/vim-pyenv'
+'
 " editing
 Plug 'junegunn/vim-easy-align'
 Plug 'mbbill/undotree'
@@ -42,6 +39,8 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'majutsushi/tagbar'
 Plug 'xolox/vim-easytags'
 Plug 'xolox/vim-misc'
+Plug 'MaicoTimmerman/Vim-Jinja2-Syntax'
+Plug 'fisadev/vim-isort'
 
 " eye candy
 Plug 'myusuf3/numbers.vim'
@@ -56,7 +55,6 @@ Plug 'othree/yajs.vim'
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug '1995eaton/vim-better-javascript-completion'
 Plug 'gavocanov/vim-js-indent'
-" Plug 'marijnh/tern_for_vim', { 'do': 'npm install' }
 Plug 'carlitux/deoplete-ternjs'
 Plug 'digitaltoad/vim-jade'
 Plug 'elzr/vim-json'
