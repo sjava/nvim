@@ -20,7 +20,8 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'mhinz/vim-sayonara'
 Plug 'mileszs/ack.vim'
 Plug 'lambdalisue/vim-pyenv'
-'
+Plug 'luochen1990/rainbow'
+
 " editing
 Plug 'junegunn/vim-easy-align'
 Plug 'mbbill/undotree'
