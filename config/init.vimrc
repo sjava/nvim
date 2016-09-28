@@ -42,6 +42,7 @@ Plug 'xolox/vim-easytags'
 Plug 'xolox/vim-misc'
 Plug 'MaicoTimmerman/Vim-Jinja2-Syntax'
 Plug 'fisadev/vim-isort'
+Plug 'tpope/vim-fugitive'
 
 " eye candy
 Plug 'myusuf3/numbers.vim'
