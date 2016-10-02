@@ -5,7 +5,10 @@ set hlsearch
 set ignorecase
 
 set number
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+" let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+if (has("termguicolors"))
+    set termguicolors
+endif
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start

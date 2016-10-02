@@ -31,9 +31,11 @@ let g:neomake_open_list = 2
 
 let g:neomake_javascript_enabled_makers = ['eslint']
 
-set background=dark
+" set background=dark
 " colorscheme apprentice
-colorscheme OceanicNext
+" colorscheme OceanicNext
+let g:onedark_terminal_italics=1
+colorscheme onedark
 " colorscheme solarized
 " colorscheme kalisi
 

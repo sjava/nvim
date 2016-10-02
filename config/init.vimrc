@@ -1,10 +1,11 @@
 call plug#begin('~/.config/nvim/plugged')
 
 " colorschemes
-Plug 'romainl/Apprentice'
+" Plug 'romainl/Apprentice'
 Plug 'mhartington/oceanic-next'
 Plug 'frankier/neovim-colors-solarized-truecolor-only'
-Plug 'freeo/vim-kalisi'
+" Plug 'freeo/vim-kalisi'
+Plug 'joshdick/onedark.vim'
 
 " general
 " Plug 'ervandew/supertab'
@@ -43,6 +44,7 @@ Plug 'xolox/vim-misc'
 Plug 'MaicoTimmerman/Vim-Jinja2-Syntax'
 Plug 'fisadev/vim-isort'
 Plug 'tpope/vim-fugitive'
+Plug 'sheerun/vim-polyglot'
 
 " eye candy
 Plug 'myusuf3/numbers.vim'

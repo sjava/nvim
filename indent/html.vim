@@ -105,6 +105,7 @@ call <SID>HtmlIndentPush('u')
 call <SID>HtmlIndentPush('ul')
 call <SID>HtmlIndentPush('var')
 call <SID>HtmlIndentPush('li')
+call <SID>HtmlIndentPush('p')
 
 
 " [-- <ELEMENT ? O O ...> --]
