@@ -10,7 +10,7 @@ Plug 'joshdick/onedark.vim'
 " general
 " Plug 'ervandew/supertab'
 Plug 'benekastah/neomake'
-Plug 'Shougo/deoplete.nvim'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/echodoc'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'SirVer/ultisnips'
@@ -67,6 +67,8 @@ Plug 'mxw/vim-jsx'
 
 " elixir
 Plug 'elixir-lang/vim-elixir'
+Plug 'thinca/vim-ref'
+Plug 'slashmili/alchemist.vim'
 
 " other
 Plug 'mattn/emmet-vim'
