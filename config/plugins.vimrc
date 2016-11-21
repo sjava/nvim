@@ -113,3 +113,6 @@ let g:rainbow_conf = {
     \       'css': 0,
     \   }
     \}
+
+let g:formatters_python = ['yapf']
+let g:formatter_yapf_style = 'google'
