@@ -75,12 +75,15 @@ let g:used_javascript_libs = 'jquery,underscore,react,flux,chai'
 " augroup end
 
 " tern
-" if exists('g:plugs["tern_for_vim"]')
-"   let g:tern_show_argument_hints = 'on_hold'
-"   let g:tern_show_signature_in_pum = 1
+let g:tern_request_timeout = 1
+let g:tern#command = ["tern"]
+let g:tern#arguments = ["--persistent"]
+if exists('g:plugs["tern_for_vim"]')
+  let g:tern_show_argument_hints = 'on_hold'
+  let g:tern_show_signature_in_pum = 1
 
-"   autocmd FileType javascript setlocal omnifunc=tern#Complete
-" endif
+  autocmd FileType javascript setlocal omnifunc=tern#Complete
+endif
 
 " disable colorizer at startup
 let g:colorizer_startup = 0
@@ -114,5 +117,5 @@ let g:rainbow_conf = {
     \   }
     \}
 
-let g:formatters_python = ['yapf']
-let g:formatter_yapf_style = 'google'
+" let g:formatters_python = ['yapf']
+" let g:formatter_yapf_style = 'google'

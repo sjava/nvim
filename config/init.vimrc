@@ -2,9 +2,6 @@ call plug#begin('~/.config/nvim/plugged')
 
 " colorschemes
 " Plug 'romainl/Apprentice'
-Plug 'mhartington/oceanic-next'
-Plug 'frankier/neovim-colors-solarized-truecolor-only'
-" Plug 'freeo/vim-kalisi'
 Plug 'joshdick/onedark.vim'
 
 " general
@@ -46,6 +43,7 @@ Plug 'MaicoTimmerman/Vim-Jinja2-Syntax'
 Plug 'fisadev/vim-isort'
 Plug 'tpope/vim-fugitive'
 Plug 'sheerun/vim-polyglot'
+Plug 'Kris2k/matchit'
 
 " eye candy
 Plug 'myusuf3/numbers.vim'
@@ -61,8 +59,9 @@ Plug 'othree/javascript-libraries-syntax.vim'
 Plug '1995eaton/vim-better-javascript-completion'
 Plug 'gavocanov/vim-js-indent'
 Plug 'carlitux/deoplete-ternjs'
-Plug 'digitaltoad/vim-jade'
-Plug 'elzr/vim-json'
+Plug 'ternjs/tern_for_vim'
+"Plug 'digitaltoad/vim-jade'
+"Plug 'elzr/vim-json'
 Plug 'mxw/vim-jsx'
 
 " elixir
