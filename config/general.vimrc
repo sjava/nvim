@@ -120,7 +120,6 @@ set hid " buffer becomes hidden when abandoned
 
 " stop highlighting of underscores in markdown files
 autocmd BufNewFile,BufRead,BufEnter *.md,*.markdown :syntax match markdownIgnore "_"
-
 " clipboard
 set clipboard+=unnamed
 

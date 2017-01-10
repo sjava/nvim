@@ -89,8 +89,6 @@ endif
 let g:colorizer_startup = 0
 let g:colorizer_nomap = 1
 
-" autoformat
-au BufWrite *.py,*.html,*.js,*.css :Autoformat
 
 " rainbow
 let g:rainbow_active = 1
@@ -113,9 +111,14 @@ let g:rainbow_conf = {
     \       'html': {
     \           'parentheses': ['start=/\v\<((area|base|br|col|embed|hr|img|input|keygen|link|menuitem|meta|param|source|track|wbr)[ >])@!\z([-_:a-zA-Z0-9]+)(\s+[-_:a-zA-Z0-9]+(\=("[^"]*"|'."'".'[^'."'".']*'."'".'|[^ '."'".'"><=`]*))?)*\>/ end=#</\z1># fold'],
     \       },
+    \       'jinja': {
+    \           'parentheses': ['start=/\v\<((area|base|br|col|embed|hr|img|input|keygen|link|menuitem|meta|param|source|track|wbr)[ >])@!\z([-_:a-zA-Z0-9]+)(\s+[-_:a-zA-Z0-9]+(\=("[^"]*"|'."'".'[^'."'".']*'."'".'|[^ '."'".'"><=`]*))?)*\>/ end=#</\z1># fold'],
+    \       },
     \       'css': 0,
     \   }
     \}
 
-" let g:formatters_python = ['yapf']
-" let g:formatter_yapf_style = 'google'
+" autoformat
+au BufWrite *.py,*.html,*.js,*.css :Autoformat
+let g:formatters_python = ['yapf']
+let g:formatter_yapf_style = 'google'

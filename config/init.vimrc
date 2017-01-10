@@ -44,6 +44,7 @@ Plug 'fisadev/vim-isort'
 Plug 'tpope/vim-fugitive'
 Plug 'sheerun/vim-polyglot'
 Plug 'Kris2k/matchit'
+Plug 'lilydjwg/fcitx.vim'
 
 " eye candy
 Plug 'myusuf3/numbers.vim'
@@ -63,6 +64,9 @@ Plug 'ternjs/tern_for_vim'
 "Plug 'digitaltoad/vim-jade'
 "Plug 'elzr/vim-json'
 Plug 'mxw/vim-jsx'
+Plug 'ryym/vim-riot'
+Plug 'pangloss/vim-javascript'
+
 
 " elixir
 Plug 'elixir-lang/vim-elixir'
