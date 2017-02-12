@@ -119,6 +119,7 @@ let g:rainbow_conf = {
     \}
 
 " autoformat
-au BufWrite *.py,*.html,*.js,*.css :Autoformat
-let g:formatters_python = ['yapf']
-let g:formatter_yapf_style = 'google'
+au BufWrite *.py,*.html,*.js,*.css,*.tag,*.vue :Autoformat
+let g:formatters_riot =['htmlbeautify']
+" let g:formatters_python = ['yapf']
+" let g:formatter_yapf_style = 'pep8'

@@ -65,6 +65,7 @@ Plug 'ternjs/tern_for_vim'
 "Plug 'elzr/vim-json'
 Plug 'mxw/vim-jsx'
 Plug 'ryym/vim-riot'
+Plug 'posva/vim-vue'
 Plug 'pangloss/vim-javascript'
 
 
