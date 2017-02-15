@@ -118,8 +118,29 @@ let g:rainbow_conf = {
     \   }
     \}
 
-" autoformat
-au BufWrite *.py,*.html,*.js,*.css,*.tag,*.vue :Autoformat
-let g:formatters_riot =['htmlbeautify']
-" let g:formatters_python = ['yapf']
-" let g:formatter_yapf_style = 'pep8'
+let g:neoformat_vue_prettydiff = {
+            \ 'exe': 'prettydiff',
+            \ 'args': ['mode:"beautify"',
+            \ 'lang:"html"',
+            \ 'insize:2',
+            \ 'readmethod:"filescreen"',
+            \ 'endquietly:"quiet"',
+            \ 'source:"%:p"'],
+            \ 'no_append': 1
+            \ }
+let g:neoformat_enabled_vue = ['prettydiff']
+let g:neoformat_html_prettydiff = {
+            \ 'exe': 'prettydiff',
+            \ 'args': ['mode:"beautify"',
+            \ 'lang:"html"',
+            \ 'insize:2',
+            \ 'readmethod:"filescreen"',
+            \ 'endquietly:"quiet"',
+            \ 'source:"%:p"'],
+            \ 'no_append': 1
+            \ }
+let g:neoformat_enabled_html = ['prettydiff']
+augroup fmt
+    autocmd!
+    autocmd BufWritePre * Neoformat
+augroup END

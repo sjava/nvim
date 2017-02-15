@@ -80,6 +80,9 @@ set ttimeoutlen=100
 " detect .md as markdown instead of modula-2
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
+" vue as vue
+autocmd BufNewFile,BufRead *.vue set filetype=vue
+
 " Unix as standard file type
 set ffs=unix,dos,mac
 
