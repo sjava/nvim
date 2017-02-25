@@ -81,7 +81,7 @@ set ttimeoutlen=100
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 " vue as vue
-autocmd BufNewFile,BufRead *.vue set filetype=vue
+autocmd BufNewFile,BufRead *.vue set filetype=html
 
 " Unix as standard file type
 set ffs=unix,dos,mac

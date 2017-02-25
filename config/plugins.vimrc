@@ -136,13 +136,10 @@ let g:neoformat_html_prettydiff = {
             \ 'lang:"html"',
             \ 'insize:2',
             \ 'methodchain:"chain"',
+            \ 'formatObject:"indent"',
             \ 'readmethod:"filescreen"',
             \ 'endquietly:"quiet"',
             \ 'source:"%:p"'],
             \ 'no_append': 1
             \ }
-let g:neoformat_enabled_html = ['prettydiff']
-augroup fmt
-    autocmd!
-    autocmd BufWritePre * Neoformat
-augroup END
+let g:neoformat_enabled_html = ['htmlbeautify','prettydiff']
