@@ -133,13 +133,14 @@ let g:neoformat_enabled_vue = ['prettydiff']
 let g:neoformat_html_prettydiff = {
             \ 'exe': 'prettydiff',
             \ 'args': ['mode:"beautify"',
-            \ 'lang:"html"',
+            \ 'lang:"auto"',
             \ 'insize:2',
             \ 'methodchain:"chain"',
             \ 'formatObject:"indent"',
             \ 'readmethod:"filescreen"',
             \ 'endquietly:"quiet"',
+            \ 'styleguide:"grunt"',
             \ 'source:"%:p"'],
             \ 'no_append': 1
             \ }
-let g:neoformat_enabled_html = ['htmlbeautify','prettydiff']
+let g:neoformat_enabled_html = ['prettydiff','htmlbeautify']
