@@ -8,6 +8,8 @@ set completeopt-=preview
 if !exists('g:deoplete#omni#input_patterns')
   let g:deoplete#omni#input_patterns = {}
 endif
+" deoplete jedi
+let g:deoplete#sources#jedi#extra_path='~/.pyenv/versions/myapp/lib/python3.5/site-packages'
 
 " echodoc
 let g:echodoc_enable_at_startup = 1
