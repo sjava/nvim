@@ -2,6 +2,8 @@ filetype plugin indent on
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
+"call deoplete#util#set_default('g:deoplete#sources', {})
+"let g:deoplete#sources._ = []
 let g:deoplete#disable_auto_complete = 0
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 set completeopt-=preview
@@ -135,7 +137,7 @@ let g:neoformat_enabled_vue = ['prettydiff']
 let g:neoformat_html_prettydiff = {
             \ 'exe': 'prettydiff',
             \ 'args': ['mode:"beautify"',
-            \ 'lang:"auto"',
+            \ 'lang:"html"',
             \ 'insize:2',
             \ 'methodchain:"chain"',
             \ 'formatObject:"indent"',
