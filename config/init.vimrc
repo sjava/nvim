@@ -45,6 +45,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'sheerun/vim-polyglot'
 Plug 'Kris2k/matchit'
 Plug 'lilydjwg/fcitx.vim'
+Plug 'chrisbra/NrrwRgn'
 
 " eye candy
 Plug 'myusuf3/numbers.vim'

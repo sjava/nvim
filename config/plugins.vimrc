@@ -141,10 +141,16 @@ let g:neoformat_html_prettydiff = {
             \ 'insize:2',
             \ 'methodchain:"chain"',
             \ 'formatObject:"indent"',
-            \ 'readmethod:"filescreen"',
+            \ 'readmethod:"screen"',
             \ 'endquietly:"quiet"',
-            \ 'styleguide:"grunt"',
+            \ 'styleguide:"google"',
             \ 'source:"%:p"'],
+            \ 'stdin':1,
             \ 'no_append': 1
             \ }
 let g:neoformat_enabled_html = ['prettydiff','htmlbeautify']
+
+" NrrwRgn plugin
+command! -nargs=* -bang -range -complete=filetype NN
+              \ :<line1>,<line2> call nrrwrgn#NrrwRgn('',<q-bang>)
+              \ | set filetype=<args>
