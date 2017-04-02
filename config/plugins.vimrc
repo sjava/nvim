@@ -122,33 +122,12 @@ let g:rainbow_conf = {
     \   }
     \}
 
-let g:neoformat_vue_prettydiff = {
-            \ 'exe': 'prettydiff',
-            \ 'args': ['mode:"beautify"',
-            \ 'lang:"html"',
-            \ 'insize:2',
-            \ 'methodchain:"chain"',
-            \ 'readmethod:"filescreen"',
-            \ 'endquietly:"quiet"',
-            \ 'source:"%:p"'],
-            \ 'no_append': 1
-            \ }
-let g:neoformat_enabled_vue = ['prettydiff']
-let g:neoformat_html_prettydiff = {
-            \ 'exe': 'prettydiff',
-            \ 'args': ['mode:"beautify"',
-            \ 'lang:"html"',
-            \ 'insize:2',
-            \ 'methodchain:"chain"',
-            \ 'formatObject:"indent"',
-            \ 'readmethod:"screen"',
-            \ 'endquietly:"quiet"',
-            \ 'styleguide:"google"',
-            \ 'source:"%:p"'],
-            \ 'stdin':1,
-            \ 'no_append': 1
-            \ }
-let g:neoformat_enabled_html = ['prettydiff','htmlbeautify']
+let g:neoformat_enabled_html = ['prettydiff']
+let g:neoformat_enabled_javascript = ['prettiereslint']
+augroup fmt
+  autocmd!
+  autocmd BufWritePre *.css,*.js,*.py Neoformat
+augroup END
 
 " NrrwRgn plugin
 command! -nargs=* -bang -range -complete=filetype NN
