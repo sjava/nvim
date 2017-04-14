@@ -121,12 +121,23 @@ let g:rainbow_conf = {
     \       'css': 0,
     \   }
     \}
-
+let g:neoformat_html_prettydiff = {
+        \ 'exe': 'prettydiff',
+        \ 'args': ['mode:"beautify"',
+                 \ 'lang:"html"',
+                 \ 'insize:2',
+                 \ 'readmethod:"filescreen"',
+                 \ 'endquietly:"quiet"',
+                 \ 'source:"%:p"'],
+        \ 'no_append': 1
+            \ }
 let g:neoformat_enabled_html = ['prettydiff']
-let g:neoformat_enabled_javascript = ['prettiereslint']
+let g:neoformat_enabled_javascript = ['eslint_d']
 augroup fmt
   autocmd!
   autocmd BufWritePre *.css,*.js,*.py Neoformat
+  autocmd BufWritePost *.vue,*.html Neoformat
+  autocmd BufWritePost *.css,*.js,*.py,*.vue,*.html IndentLinesReset
 augroup END
 
 " NrrwRgn plugin
