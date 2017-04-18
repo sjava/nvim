@@ -43,7 +43,6 @@ Plug 'MaicoTimmerman/Vim-Jinja2-Syntax'
 Plug 'fisadev/vim-isort'
 Plug 'tpope/vim-fugitive'
 Plug 'sheerun/vim-polyglot'
-Plug 'Kris2k/matchit'
 Plug 'lilydjwg/fcitx.vim'
 Plug 'chrisbra/NrrwRgn'
 
