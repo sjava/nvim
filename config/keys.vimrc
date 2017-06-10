@@ -110,3 +110,6 @@ inoremap <Leader><Tab> <Space><Space>
 
 " colorizer
 nmap <Leader>tc :ColorToggle<CR>
+
+inoremap <C-e> <Esc>A
+inoremap <C-a> <Esc>I
