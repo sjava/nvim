@@ -6,7 +6,7 @@ Plug 'joshdick/onedark.vim'
 
 " general
 " Plug 'ervandew/supertab'
-Plug 'benekastah/neomake'
+Plug 'w0rp/ale'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/echodoc'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -44,7 +44,6 @@ Plug 'fisadev/vim-isort'
 Plug 'tpope/vim-fugitive'
 Plug 'sheerun/vim-polyglot'
 Plug 'lilydjwg/fcitx.vim'
-Plug 'chrisbra/NrrwRgn'
 
 " eye candy
 Plug 'myusuf3/numbers.vim'

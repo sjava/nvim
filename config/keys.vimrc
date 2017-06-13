@@ -90,12 +90,6 @@ vmap <Enter> <Plug>(EasyAlign)
 " start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
 
-" neomake
-nmap <Leader><Space>o :lopen<CR>
-nmap <Leader><Space>c :lclose<CR>
-nmap <Leader><Space>, :ll<CR>
-nmap <Leader><Space>n :lnext<CR>
-nmap <Leader><Space>p :lprev<CR>
 
 " folding
 nmap <Leader>f zf%
@@ -113,3 +107,5 @@ nmap <Leader>tc :ColorToggle<CR>
 
 inoremap <C-e> <Esc>A
 inoremap <C-a> <Esc>I
+
+imap <C-i> <Esc>

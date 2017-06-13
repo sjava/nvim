@@ -11,29 +11,10 @@ if !exists('g:deoplete#omni#input_patterns')
   let g:deoplete#omni#input_patterns = {}
 endif
 " deoplete jedi
-let g:deoplete#sources#jedi#extra_path='~/.pyenv/versions/myapp/lib/python3.5/site-packages'
+let g:deoplete#sources#jedi#extra_path='~/.pyenv/versions/myapp/lib/python3.6/site-packages'
 
 " echodoc
 let g:echodoc_enable_at_startup = 1
-
-" neomake config
-autocmd! BufWritePost * Neomake
-autocmd! QuitPre * let g:neomake_verbose = 0
-" autocmd BufLeave * QFix
-
-let g:neomake_warning_sign = {
-  \ 'text': 'W',
-  \ 'texthl': 'WarningMsg',
-  \ }
-
-let g:neomake_error_sign = {
-  \ 'text': 'E',
-  \ 'texthl': 'ErrorMsg',
-  \ }
-
-let g:neomake_open_list = 2
-
-let g:neomake_javascript_enabled_makers = ['eslint']
 
 " set background=dark
 " colorscheme apprentice
@@ -140,7 +121,17 @@ augroup fmt
   autocmd BufWritePost *.css,*.js,*.py,*.vue,*.html IndentLinesReset
 augroup END
 
-" NrrwRgn plugin
-command! -nargs=* -bang -range -complete=filetype NN
-              \ :<line1>,<line2> call nrrwrgn#NrrwRgn('',<q-bang>)
-              \ | set filetype=<args>
+
+" ale plugin
+let g:ale_sign_column_always = 1
+" let g:ale_sign_error = '>>'
+" let g:ale_sign_warning = '--'
+let g:ale_sign_error = '✗'
+let g:ale_sign_warning = '⚡'
+" set statusline=%{ALEGetStatusLine()}
+" let g:ale_statusline_format = ['⨉ %d', '⚠  %d', '⬥ ok']
+let g:ale_echo_msg_error_str = 'E'
+let g:ale_echo_msg_warning_str = 'W'
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+nmap  <M-k> <Plug>(ale_previous_wrap)
+nmap  <M-j> <Plug>(ale_next_wrap)
