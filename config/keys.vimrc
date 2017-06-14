@@ -108,4 +108,3 @@ nmap <Leader>tc :ColorToggle<CR>
 inoremap <C-e> <Esc>A
 inoremap <C-a> <Esc>I
 
-imap <C-i> <Esc>
