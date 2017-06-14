@@ -114,9 +114,12 @@ let g:neoformat_html_prettydiff = {
             \ }
 let g:neoformat_enabled_html = ['prettydiff']
 let g:neoformat_enabled_javascript = ['eslint_d']
+let g:neoformat_enabled_css = ['prettier']
+let g:neoformat_enabled_less = ['prettier']
 augroup fmt
   autocmd!
-  autocmd BufWritePre *.css,*.js,*.py Neoformat
+  autocmd BufWritePre *.js,*.py Neoformat
+  autocmd BufWritePre *.css,*.less Neoformat
   autocmd BufWritePost *.vue,*.html Neoformat
   autocmd BufWritePost *.css,*.js,*.py,*.vue,*.html IndentLinesReset
 augroup END
