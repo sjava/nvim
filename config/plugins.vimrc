@@ -124,17 +124,15 @@ augroup fmt
   autocmd BufWritePost *.css,*.js,*.py,*.vue,*.html IndentLinesReset
 augroup END
 
-
 " ale plugin
 let g:ale_sign_column_always = 1
-" let g:ale_sign_error = '>>'
-" let g:ale_sign_warning = '--'
 let g:ale_sign_error = '✗'
 let g:ale_sign_warning = '⚡'
-" set statusline=%{ALEGetStatusLine()}
-" let g:ale_statusline_format = ['⨉ %d', '⚠  %d', '⬥ ok']
 let g:ale_echo_msg_error_str = 'E'
 let g:ale_echo_msg_warning_str = 'W'
 let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 nmap  <M-k> <Plug>(ale_previous_wrap)
 nmap  <M-j> <Plug>(ale_next_wrap)
+let g:ale_linters = {
+      \   'python': ['flake8','isort'],
+      \}

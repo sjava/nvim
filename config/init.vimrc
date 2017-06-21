@@ -20,7 +20,6 @@ Plug 'mileszs/ack.vim'
 Plug 'lambdalisue/vim-pyenv'
 Plug 'luochen1990/rainbow'
 Plug 'chrisgillis/vim-bootstrap3-snippets'
-
 " editing
 Plug 'junegunn/vim-easy-align'
 Plug 'mbbill/undotree'
