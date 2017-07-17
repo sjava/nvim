@@ -3,6 +3,7 @@ call plug#begin('~/.config/nvim/plugged')
 " colorschemes
 " Plug 'romainl/Apprentice'
 Plug 'joshdick/onedark.vim'
+Plug 'morhetz/gruvbox'
 
 " general
 " Plug 'ervandew/supertab'
@@ -20,6 +21,7 @@ Plug 'mileszs/ack.vim'
 Plug 'lambdalisue/vim-pyenv'
 Plug 'luochen1990/rainbow'
 Plug 'chrisgillis/vim-bootstrap3-snippets'
+Plug 'autozimu/LanguageClient-neovim', { 'do': ':UpdateRemotePlugins' }
 " editing
 Plug 'junegunn/vim-easy-align'
 Plug 'mbbill/undotree'

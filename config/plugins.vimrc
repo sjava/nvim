@@ -16,12 +16,13 @@ let g:deoplete#sources#jedi#extra_path='~/.pyenv/versions/myapp/lib/python3.6/si
 " echodoc
 let g:echodoc_enable_at_startup = 1
 
-" set background=dark
 " colorscheme apprentice
 " colorscheme OceanicNext
-let g:onedark_terminal_italics=1
-colorscheme onedark
-" colorscheme solarized
+" let g:onedark_terminal_italics=1
+" colorscheme onedark
+set background=dark
+let g:gruvbox_italic=1
+colorscheme gruvbox
 " colorscheme kalisi
 
 " make background transparent
@@ -136,3 +137,11 @@ nmap  <M-j> <Plug>(ale_next_wrap)
 let g:ale_linters = {
       \   'python': ['flake8','isort'],
       \}
+
+" language client
+autocmd FileType python setlocal omnifunc=LanguageClient#complete
+let g:LanguageClient_autoStart=1
+let g:LanguageClient_serverCommands = {
+        \ 'rust': ['rustup', 'run', 'nightly', 'rls'],
+        \ 'python': ['pyls'],
+        \ }
