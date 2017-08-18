@@ -117,12 +117,13 @@ let g:neoformat_enabled_html = ['prettydiff']
 let g:neoformat_enabled_javascript = ['eslint_d']
 let g:neoformat_enabled_css = ['prettier']
 let g:neoformat_enabled_less = ['prettier']
+let g:neoformat_enabled_scss = ['prettier']
 augroup fmt
   autocmd!
   autocmd BufWritePre *.js,*.py Neoformat
-  autocmd BufWritePre *.css,*.less Neoformat
+  autocmd BufWritePre *.css,*.less,*scss Neoformat
   autocmd BufWritePost *.vue,*.html Neoformat
-  autocmd BufWritePost *.css,*.js,*.py,*.vue,*.html IndentLinesReset
+  autocmd BufWritePost *.css,*.js,*.py,*.vue,*.html,*scss IndentLinesReset
 augroup END
 
 " ale plugin
