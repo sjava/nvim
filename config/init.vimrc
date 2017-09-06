@@ -90,5 +90,6 @@ Plug 'kana/vim-textobj-function'
 
 " python
 Plug 'zchee/deoplete-jedi'
+Plug 'ujihisa/neco-look'
 
 call plug#end()
