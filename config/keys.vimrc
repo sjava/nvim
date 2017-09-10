@@ -61,8 +61,6 @@ map Q gq
 " relative line numbers
 nnoremap <Leader>3 :NumbersToggle<CR>
 
-" snippets
-let g:UltiSnipsExpandTrigger="<c-j>"
 
 " remap number increment to C-s (C-a is already in use by tmux)
 nmap <C-s> <C-a>
@@ -94,10 +92,19 @@ nmap ga <Plug>(EasyAlign)
 " folding
 nmap <Leader>f zf%
 
-" deoplete tab-complete
-inoremap <silent><expr> <Tab> pumvisible() ? "\<C-n>" : deoplete#mappings#manual_complete()
 " ,<tab> for regular tab
 inoremap <Leader><Tab> <Space><Space>
+
+" snippets
+let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+
+" deoplete tab-complete
+" inoremap <silent><expr> <Tab> pumvisible() ? "\<C-n>" : deoplete#mappings#manual_complete()
+
+inoremap <expr><tab> pumvisible() ? "\<C-n>" : "\<TAB>"
+inoremap <expr><s-tab> pumvisible() ? "\<C-p>" : "\<TAB>"
 
 " tern
 " autocmd FileType javascript nnoremap <silent> <buffer> gb :TernDef<CR>
