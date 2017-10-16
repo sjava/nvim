@@ -68,7 +68,7 @@ if exists('g:plugs["tern_for_vim"]')
   let g:tern_show_argument_hints = 'on_hold'
   let g:tern_show_signature_in_pum = 1
 
-  " autocmd FileType javascript setlocal omnifunc=tern#Complete
+  autocmd FileType javascript setlocal omnifunc=tern#Complete
 endif
 
 " disable colorizer at startup
@@ -140,15 +140,16 @@ let g:ale_linters = {
       \}
 
 " language client
-set hidden
+" set hidden
 " set completefunc=LanguageClient#complete
-set omnifunc=LanguageClient#complete
+" set omnifunc=LanguageClient#complete
 " autocmd FileType python setlocal omnifunc=LanguageClient#complete
 " autocmd FileType javascript setlocal omnifunc=LanguageClient#complete
-let g:LanguageClient_autoStart=1
-let g:LanguageClient_serverCommands = {
-      \ 'rust': ['rustup', 'run', 'nightly', 'rls'],
-      \ 'python': ['pyls'],
-      \ 'javascript': ['/usr/lib/node_modules/javascript-typescript-langserver/lib/language-server-stdio.js'],
-      \ }
-let g:LanguageClient_autoStart = 1
+" let g:LanguageClient_autoStart=1
+" let g:LanguageClient_serverCommands = {
+"       \ 'rust': ['rustup', 'run', 'nightly', 'rls'],
+"       \ 'python': ['pyls'],
+"       \ 'javascript': ['/usr/lib/node_modules/javascript-typescript-langserver/lib/language-server-stdio.js'],
+"       \ 'html': ['html-languageserver', '--stdio'],
+"       \ }
+" let g:LanguageClient_autoStart = 1
