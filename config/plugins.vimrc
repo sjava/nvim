@@ -11,7 +11,7 @@ if !exists('g:deoplete#omni#input_patterns')
   let g:deoplete#omni#input_patterns = {}
 endif
 " deoplete jedi
-let g:deoplete#sources#jedi#extra_path='~/.pyenv/versions/myapp/lib/python3.6/site-packages'
+let g:deoplete#sources#jedi#extra_path='~/.pyenv/versions/myapp/lib/python3.6.1/site-packages'
 
 " echodoc
 let g:echodoc_enable_at_startup = 1
@@ -68,7 +68,7 @@ if exists('g:plugs["tern_for_vim"]')
   let g:tern_show_argument_hints = 'on_hold'
   let g:tern_show_signature_in_pum = 1
 
-  autocmd FileType javascript setlocal omnifunc=tern#Complete
+  " autocmd FileType javascript setlocal omnifunc=tern#Complete
 endif
 
 " disable colorizer at startup
@@ -140,9 +140,15 @@ let g:ale_linters = {
       \}
 
 " language client
-autocmd FileType python setlocal omnifunc=LanguageClient#complete
+set hidden
+" set completefunc=LanguageClient#complete
+set omnifunc=LanguageClient#complete
+" autocmd FileType python setlocal omnifunc=LanguageClient#complete
+" autocmd FileType javascript setlocal omnifunc=LanguageClient#complete
 let g:LanguageClient_autoStart=1
 let g:LanguageClient_serverCommands = {
-        \ 'rust': ['rustup', 'run', 'nightly', 'rls'],
-        \ 'python': ['pyls'],
-        \ }
+      \ 'rust': ['rustup', 'run', 'nightly', 'rls'],
+      \ 'python': ['pyls'],
+      \ 'javascript': ['/usr/lib/node_modules/javascript-typescript-langserver/lib/language-server-stdio.js'],
+      \ }
+let g:LanguageClient_autoStart = 1
