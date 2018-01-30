@@ -1,4 +1,4 @@
-backup/*.*
-undodir/*.*
-/plugged/*.*
+undodir/**
 /autoload/*.old
+plugged/**
+backup/**

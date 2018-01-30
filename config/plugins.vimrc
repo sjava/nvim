@@ -120,7 +120,7 @@ let g:neoformat_enabled_less = ['prettier']
 let g:neoformat_enabled_scss = ['prettier']
 augroup fmt
   autocmd!
-  autocmd BufWritePre *.js,*.py Neoformat
+  autocmd BufWritePre *.js,*.py,*.ex,*.exs Neoformat
   autocmd BufWritePre *.css,*.less,*scss Neoformat
   autocmd BufWritePost *.vue,*.html Neoformat
   autocmd BufWritePost *.css,*.js,*.py,*.vue,*.html,*scss IndentLinesReset
@@ -137,19 +137,18 @@ nmap  <M-k> <Plug>(ale_previous_wrap)
 nmap  <M-j> <Plug>(ale_next_wrap)
 let g:ale_linters = {
       \   'python': ['flake8','isort'],
+      \   'javascript': ['eslint'],
       \}
 
 " language client
-" set hidden
+set hidden
 " set completefunc=LanguageClient#complete
 " set omnifunc=LanguageClient#complete
-" autocmd FileType python setlocal omnifunc=LanguageClient#complete
+autocmd FileType python setlocal omnifunc=LanguageClient#complete
 " autocmd FileType javascript setlocal omnifunc=LanguageClient#complete
-" let g:LanguageClient_autoStart=1
-" let g:LanguageClient_serverCommands = {
-"       \ 'rust': ['rustup', 'run', 'nightly', 'rls'],
-"       \ 'python': ['pyls'],
-"       \ 'javascript': ['/usr/lib/node_modules/javascript-typescript-langserver/lib/language-server-stdio.js'],
-"       \ 'html': ['html-languageserver', '--stdio'],
-"       \ }
-" let g:LanguageClient_autoStart = 1
+let g:LanguageClient_diagnosticsEnable=0
+let g:LanguageClient_serverCommands = {
+      \ 'rust': ['rustup', 'run', 'nightly', 'rls'],
+      \ 'python': ['pyls'],
+      \ }
+let g:LanguageClient_autoStart = 1
