@@ -50,7 +50,23 @@ nnoremap <F6> :NERDTreeToggle<CR>
 nnoremap <F7> :UndotreeToggle<CR>
 nnoremap <F8> :TagbarToggle<CR>
 " indent whole file according to syntax rules
-noremap <F9> gg=G
+" noremap <F9> gg=G
+" neoterm keymap{
+let g:neoterm_position = 'horizontal'
+let g:neoterm_automap_keys = ',tt'
+
+nnoremap <silent> <f10> :TREPLSendFile<cr>
+nnoremap <silent> <f9> :TREPLSendLine<cr>
+vnoremap <silent> <f9> :TREPLSendSelection<cr>
+
+" Useful maps
+" hide/close terminal
+nnoremap <silent> ,th :call neoterm#close()<cr>
+" clear terminal
+nnoremap <silent> ,tl :call neoterm#clear()<cr>
+" kills the current job (send a <c-c>)
+nnoremap <silent> ,tc :call neoterm#kill()<cr>
+" neoterm keymap}
 
 " CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
 " so that you can undo CTRL-U after inserting a line break.
