@@ -166,3 +166,6 @@ noremap <silent><M-u> :call Tools_PreviousCursor(6)<cr>
 noremap <silent><M-d> :call Tools_PreviousCursor(7)<cr>
 inoremap <silent><M-u> <c-\><c-o>:call Tools_PreviousCursor(6)<cr>
 inoremap <silent><M-d> <c-\><c-o>:call Tools_PreviousCursor(7)<cr>
+
+" terminal return normal mode
+:tnoremap <Esc> <C-\><C-n>
