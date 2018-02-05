@@ -1,12 +1,10 @@
 call plug#begin('~/.config/nvim/plugged')
 
 " colorschemes
-" Plug 'romainl/Apprentice'
 Plug 'joshdick/onedark.vim'
 Plug 'morhetz/gruvbox'
 
 " general
-" Plug 'ervandew/supertab'
 Plug 'w0rp/ale'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/echodoc'
@@ -23,6 +21,7 @@ Plug 'luochen1990/rainbow'
 Plug 'chrisgillis/vim-bootstrap3-snippets'
 Plug 'autozimu/LanguageClient-neovim', { 'do': ':UpdateRemotePlugins' }
 Plug 'kassio/neoterm'
+Plug 'Shougo/context_filetype.vim'
 " editing
 Plug 'junegunn/vim-easy-align'
 Plug 'mbbill/undotree'
@@ -80,6 +79,7 @@ Plug 'othree/html5.vim'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'othree/csscomplete.vim'
 Plug 'groenewege/vim-less'
+Plug 't9md/vim-choosewin'
 
 " text objects
 Plug 'wellle/targets.vim'

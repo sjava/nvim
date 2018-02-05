@@ -112,6 +112,19 @@ let g:neoformat_html_prettydiff = {
         \ 'no_append': 1
             \ }
 let g:neoformat_enabled_html = ['prettydiff']
+
+" let g:neoformat_vue_prettydiff = {
+"         \ 'exe': 'prettydiff',
+"         \ 'args': ['mode:"beautify"',
+"                  \ 'lang:"html"',
+"                  \ 'insize:2',
+"                  \ 'readmethod:"filescreen"',
+"                  \ 'endquietly:"quiet"',
+"                  \ 'source:"%:p"'],
+"         \ 'no_append': 1
+"             \ }
+" let g:neoformat_enabled_vue = ['prettydiff']
+
 let g:neoformat_enabled_javascript = ['eslint_d']
 let g:neoformat_enabled_css = ['prettier']
 let g:neoformat_enabled_less = ['prettier']
@@ -150,3 +163,10 @@ let g:LanguageClient_serverCommands = {
       \ 'python': ['pyls'],
       \ }
 let g:LanguageClient_autoStart = 1
+
+" choosewin{
+" invoke with '-'
+nmap  -  <Plug>(choosewin)
+" if you want to use overlay feature
+let g:choosewin_overlay_enable = 1
+" choosewin}
