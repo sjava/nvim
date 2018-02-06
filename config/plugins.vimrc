@@ -16,11 +16,11 @@ let g:deoplete#sources#jedi#extra_path='~/.pyenv/versions/myapp/lib/python3.6.1/
 " echodoc
 let g:echodoc_enable_at_startup = 1
 
-" set background=dark
-" let g:gruvbox_italic=1
-" colorscheme gruvbox
-let g:onedark_terminal_italics=1
-colorscheme onedark
+set background=dark
+let g:gruvbox_italic=1
+colorscheme gruvbox
+" let g:onedark_terminal_italics=1
+" colorscheme onedark
 
 
 " make background transparent
