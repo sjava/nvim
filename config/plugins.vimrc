@@ -44,6 +44,7 @@ runtime macros/matchit.vim
 
 " vim-sneak settings
 hi SneakPluginTarget ctermfg=black ctermbg=181818
+let g:sneak#label = 1
 
 " javascript libraries syntax
 let g:used_javascript_libs = 'jquery,underscore,react,flux,chai'
