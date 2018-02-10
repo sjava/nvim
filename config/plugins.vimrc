@@ -33,7 +33,7 @@ let g:ctrlp_prompt_mappings={'PrtClearCache()':['<Leader><F5>']}
 let g:ctrlp_prompt_mappings={'PrtdeleteEnt()':['<Leader><F7>']}
 let g:ctrlp_match_window='bottom,order:btt,min:2,max:25'
 set wildmenu " enhanced autocomplete
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*node_modules*,*.jpg,*.png,*.svg,*.ttf,*.woff,*.woff3,*.eot
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*node_modules*,*.jpg,*.png,*.svg,*.ttf,*.woff,*.woff3,*.eot,*deps*
 ",*public/css/*,*public/js*
 
 " delimitMate options
